@@ -1,0 +1,76 @@
+.articles-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.btn-services {
+  margin-right: 25px;
+}
+
+.articles-card-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-top: 100px;
+}
+
+.articles-overlay {
+  position: absolute;
+  width: 35%;
+  bottom: -100px;
+  margin-left: 100px;
+  background: #ffffff;
+  border: 1px solid #eff0f6;
+  box-shadow: 0px 2px 6px rgba(20, 20, 43, 0.04);
+  border-radius: 24px;
+}
+
+.articles-overlay h3,
+p,
+span {
+  padding: 15px 15px 5px;
+}
+
+.articles-overlay h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  color: #211f54;
+}
+
+.articles-overlay p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #6e7191;
+}
+
+.time-and-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-and-box span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #211f54;
+}
+
+.time-and-box button {
+    background: #0075FF;
+    padding: 15px;
+    margin-right: 25px;
+}
+
+
+@media (max-width: 1150px) {
+    .articles-card-box {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
